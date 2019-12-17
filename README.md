@@ -63,7 +63,7 @@ input {
   <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
   <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
   <p id="number" class="invalid">A <b>number</b></p>
-  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  <p id="length" class="invalid">Minimum <b>10 characters</b></p>
 </div>
 				
 <script>
@@ -116,7 +116,7 @@ myInput.onkeyup = function() {
   }
   
   // Validate length
-  if(myInput.value.length >= 8) {
+  if(myInput.value.length >= 10) {
     length.classList.remove("invalid");
     length.classList.add("valid");
   } else {
